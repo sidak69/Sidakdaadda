@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidak Chopra's Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #FF7F50, #1E90FF);
+            color: white;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        h1 {
+            font-size: 3rem;
+            animation: slideIn 3s ease-out;
+        }
+
+        p {
+            font-size: 1.5rem;
+            animation: fadeIn 2s ease-in;
+        }
+
+        .highlight {
+            color: #FFD700;
+            font-weight: bold;
+            animation: bounce 1.5s infinite;
+        }
+
+        @keyframes slideIn {
+            0% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes bounce {
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #FFD700;
+            animation: spin 5s infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <img src="sidak.jpg" alt="Sidak Chopra" class="profile-image">
+    <h1>Hello, I'm <span class="highlight">Sidak Chopra</span>!</h1>
+    <p>I'm from <span class="highlight">Punjab</span>, and I love watching <span class="highlight">Oggy</span>!</p>
+    <p>I study at the <span class="highlight">worst school</span>.</p>
+</body>
+</html>
